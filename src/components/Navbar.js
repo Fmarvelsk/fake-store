@@ -5,6 +5,7 @@ import { useStateValue } from '../StateProvider';
 import { Link } from 'react-router-dom'
 
 const NavbarCarts = () => {
+   // eslint-disable-next-line
  const [{carts}, dispatch] = useStateValue()
 return (
     <Navbar collapseOnSelect expand="lg" className="bg" variant="dark" sticky='top'>
