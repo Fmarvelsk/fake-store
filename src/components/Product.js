@@ -10,7 +10,7 @@ function Product (props) {
         <>
                
            
-            {props.items.map( (index, key) => 
+            {props?.items.map( (index, key) => 
             <Col sm={6} xs={6} md={3} className="product-items mb-5" key={key}>
                     <div className="colors">
                     <div className="product_rating">
