@@ -12,7 +12,7 @@ import { loadStripe } from '@stripe/stripe-js';
 import NotFound from './components/NotFound'
 import Axios from 'axios';
 import { useStateValue } from './StateProvider';
-import ViewProd from './components/ViewProduct';
+//import ViewProd from './components/ViewProduct';
 import Orders from './components/orders';
 
 
@@ -54,9 +54,6 @@ function App() {
     <Elements stripe={Apikey}>
     <Payment/>
     </Elements>
-</Route>
-<Route path='/viewProdut'>
-  <ViewProd/>
 </Route>
 <Route path="/orders">
   <Orders/>
