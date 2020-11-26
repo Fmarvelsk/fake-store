@@ -15,7 +15,7 @@ function CheckoutProduct () {
                                <div className="checkout_productInfo">
                                <p className="checkout_title">{items.title}</p>
                                 <p className="checkout_price"><small>$</small><strong>{items.price}</strong></p>
-                                
+                    <p> <strong>Description : </strong>{ items.description}</p>
                                 <button className="product_button" onClick = { ( () =>{
 
                                         dispatch({

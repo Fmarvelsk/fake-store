@@ -27,7 +27,7 @@ function Order({ props }) {
                 </>
             )} 
             decimalScale={2}
-            value={props.data?.amount }
+            value={props?.amount }
             displayType={'text'}
             thousandSeparator={true}
             prefix={'$'}/>

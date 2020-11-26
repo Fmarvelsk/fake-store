@@ -29,7 +29,8 @@ function Product (props) {
                                     id : index.id,
                                     title:index.title,
                                     image:index.image,
-                                    price: index.price
+                                    price: index.price,
+                                    description : index.description
 
                                 }
 
