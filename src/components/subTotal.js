@@ -43,7 +43,7 @@ function SubTotal(){
             <button onClick={paymentClick}>Proceed to checkout</button>
 
             <div className="mt-3">
-            <button onClick={RemoveAll}>Remove all items</button>
+            <button className="cls" onClick={RemoveAll}>Remove all items</button>
 
             </div>
         </div>
