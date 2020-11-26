@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Image, Form, FormControl, Jumbotron, Container } from 'react-bootstrap';
+import React from 'react';
+import { Jumbotron } from 'react-bootstrap';
 
 function Header() {
 	
