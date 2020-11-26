@@ -2,12 +2,12 @@ import React from 'react';
 import { useStateValue } from '../StateProvider';
 
 function CheckoutProduct () {
+    // eslint-disable-next-line
     const [{ carts, product }, dispatch] = useStateValue();
 
 
         return(
             <div>
-                {console.log(carts)}
                     {carts.map( (items, index) => 
                            <div className="checkout_product" key={index}>
 

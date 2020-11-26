@@ -2,7 +2,7 @@ import React, {useEffect} from 'react'
 import './App.css';
 import Navbar from './components/Navbar'
 import Header from './components/Header'
-import { BrowserRouter as Router, Route, Switch, useRouteMatch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Product from './components/ProductItem'
 import Footer from './components/Footer';
 import Checkout from './components/checkout'
@@ -19,9 +19,11 @@ import Orders from './components/orders';
 const Apikey = loadStripe('pk_test_51HST2ACrAbXD0UyyFNxTJo8TDLxDJiGuMiuWsaDPVvH0ifiU484BOFuI1AvHGXPOwjzYwAa7FPYcaoQEbisGAKme00NchWU52p');
 
 function App() {
+   //eslint-disable-next-line
   const [{product}, dispatch] = useStateValue()
   useEffect( () => {
     const Product = async () => {
+       //eslint-disable-next-line
     const getProduct = await Axios({
       method : 'GET',
       url:'https://fakestoreapi.com/products'
@@ -33,7 +35,7 @@ function App() {
     })
   }
   Product()
-
+// eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
   return (
     <div className="App">
